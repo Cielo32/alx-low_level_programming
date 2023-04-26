@@ -6,17 +6,22 @@
  */
 int main(void)
 {
-	int count;
-	unsigned long fib1 = 1, fib2 = 2, sum;
+	int i;
+	unsigned long j = 1, k = 2, sum;
 
-	for (count = 0; count < 49; count++)
+	printf("%lu, %lu, ", j, k);
+
+	for (i = 3; i <= 50; i++)
 	{
-		sum = fib1 + fib2;
-		printf("%lu, ", sum);
+		sum = j + k;
+		printf("%lu", sum);
 
-		fib1 = fib2;
-		fib2 = sum;
+		if (i < 50)
+			printf(", ");
+		else
+			printf("\n");
+		j = k;
+		k = sum;
 	}
-	printf("%lu\n", fib2);
 	return (0);
 }
