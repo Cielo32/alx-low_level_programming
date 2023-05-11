@@ -3,8 +3,8 @@
 
 int check_prime(int n, int k);
 /**
- * is_prime_number - A function that returns 1 if the input integer is a prime number
- * otherwise return 0
+ * is_prime_number - A function that returns 1 if the input integer
+ * is a prime number otherwise return 0
  * @n: Number to value
  * Return: integer value
  */
