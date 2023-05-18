@@ -24,9 +24,10 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	for (a = 0; min <= max; a++; min++)
+	for (a = 0; a < b; a++)
 	{
 		z[a] = min;
+		min++;
 	}
 	return (z);
 }
